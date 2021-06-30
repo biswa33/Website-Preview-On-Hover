@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Website Preview On Hover</title>
+    </head>
+    <style>
+        .img-wrapper {
+            height: 400px;
+            overflow-y: hidden;
+            box-shadow: 1px 2px 17px 0px grey;
+            /* width & margin are temporary code, 
+             * remove it if you are using it in website 
+             */
+            width: 600px;
+            margin: 0 auto
+        }
+        img {
+            transition: all 15s ease-in-out;
+            /* */
+            width: 100%;
+        }
+        
+        img:hover {
+            margin-top: 400px;
+            transform: translateY(-100%);
+            transition: all 15s ease-in-out;
+        }
+    </style>
+    <body>
+        <div class="img-wrapper">
+            <img src="./images/Investing Service thumbnail.jpg" alt="img">
+        </div>
+    </body>
+</html>
